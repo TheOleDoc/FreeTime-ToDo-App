@@ -7,7 +7,8 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FreeTime | A ToDo App</title>
-
+    <!--Font Awesome Icons-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!--Bootstrap 4.0 CSS-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--Google Font CSS-->
@@ -17,7 +18,7 @@
 
 
     <!--JQuery-->
-        <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <!-- Optional JavaScript from BootStrap 4.0 Main Page -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -29,7 +30,7 @@
 <body>
     <div id="container">
 
-        <!--Menu Bar-->
+        <!--START Menu Bar-->
         <div class="container col-12" id="container_nav">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
                 <a class="navbar-brand" href="index.html"><h2>FreeTime</h2></a>
@@ -62,16 +63,23 @@
                 </div>
             </nav>
         </div>
-        <!--Menu Bar End-->
+        <!--END Menu Bar-->
+        <!--START Main Content-->
+        <main>
+            <input type="text" class="myinput" onkeyup="checkKey(event)"/>
+            <button onclick="addItem()">Add Item</button>
 
-        <div id="homePage">
-            <div id="list01">
 
+            <div class="list">
+                <div class="row">
+
+
+                </div>
             </div>
-        </div>
 
 
-
+        </main>
+        <!--END Main Content-->
     </div>
 
 
