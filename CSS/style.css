@@ -1,3 +1,13 @@
+#allLists {
+  margin: 2em;
+  padding: 1em;
+  border-style: solid;
+  border-color: grey;
+  min-height: 800px; }
+
+#index-main-myListTitle {
+  padding: 1em; }
+
 main {
   padding: 2em; }
 
@@ -8,8 +18,9 @@ html, body {
   width: 100%;
   font-family: 'Open Sans', sans-serif; }
 
-h2 {
-  font-family: 'Montserrat', sans-serif; }
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700; }
 
 #container_nav {
   width: 100%;

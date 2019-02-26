@@ -33,7 +33,7 @@
         <!--START Menu Bar-->
         <div class="container col-12" id="container_nav">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-                <a class="navbar-brand" href="index.html"><h2>FreeTime</h2></a>
+                <a class="navbar-brand" href="index.html"><h3>FreeTime</h3></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -65,8 +65,18 @@
         </div>
         <!--END Menu Bar-->
         <!--START Main Content-->
-        <main>
+        <main class="container">
+            <h3 class="text-center" id="index-main-myListTitle">My Lists</h3>
+            <div class="createList">
+                <button onclick="createNewList()">
+                    Create a New List
+                </button>
+            </div>
+            <div id="allLists">
+                <div id="myLists">
 
+                </div>
+            </div>
         </main>
         <!--END Main Content-->
     </div>
