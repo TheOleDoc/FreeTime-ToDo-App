@@ -1,2 +1,11 @@
+.mainTitleClass {
+  padding-top: 1em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  padding-left: 2em; }
+
 html, body {
   font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  font-family: 'Montserrat', sans-serif; }
