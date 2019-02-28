@@ -47,17 +47,17 @@
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">New List</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Trash</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Help</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                        <!--<li class="nav-item">-->
+                            <!--<a class="nav-link" href="#">New List</a>-->
+                        <!--</li>-->
+                        <!--<li class="nav-item">-->
+                            <!--<a class="nav-link" href="#">Trash</a>-->
+                        <!--</li>-->
+                        <!--<li class="nav-item">-->
+                            <!--<a class="nav-link" href="#">Help</a>-->
+                        <!--</li>-->
+                        <!--<li class="nav-item">-->
+                            <!--<a class="nav-link" href="#">About</a>-->
                         </li>
                     </ul>
                 </div>
@@ -68,17 +68,21 @@
         <main class="container">
             <h3 class="text-center" id="index-main-myListTitle">My Lists</h3>
             <div class="createList">
-                <button onclick="createNewList()">
+                <input id="addlistbox" onkeyup="addlist(this.value, event)" placeholder="...Name of your new list" />
+                <button onclick="addlist2('inputId')">
                     Create a New List
                 </button>
             </div>
             <div id="allLists">
-                <div id="myLists">
+                <div class="boxoflists">
 
                 </div>
             </div>
         </main>
         <!--END Main Content-->
+        <!--START testing-->
+
+        <!--END testing-->
     </div>
 
 
