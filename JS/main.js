@@ -62,7 +62,7 @@ function pagePrint(listArray){
 }
 
 function deleteItem(element) {
-    $(element).sibling().fadeOut(
+    $(element).siblings().fadeOut(
         function () {
             $(element).siblings().remove();
         }
