@@ -19,5 +19,5 @@ function theNewLists(name){ //this would be our list
 
 function Item(name, pending){ //this could be a list item
     this.name = name;
-    this.damage = pending;
+    this.pending = pending;
 }
