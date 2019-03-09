@@ -17,7 +17,7 @@
 })();
 
 
-function putBokoblin(myval, event){
+function putNewList(myval, event){
     switch(event.key){
         case "Enter":
             // console.log("enter pushed");
