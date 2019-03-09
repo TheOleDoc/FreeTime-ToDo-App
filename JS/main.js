@@ -8,7 +8,7 @@
             mylists.add(mydata[l].name);
 
             for(let i = 0; i < mydata[l].collection.length; i++){
-                mylists.collection[l].add(mydata[l].collection[i].name, mydata[l].collection[i].damage);
+                mylists.collection[l].add(mydata[l].collection[i].name, mydata[l].collection[i].pending);
             }
 
         }
@@ -34,7 +34,7 @@ function setMyData(){
 }
 
 function getMyData(){
-    $(".bokoblinbox").html("");
+    $(".allMyLists").html("");
     let objdata = JSON.parse(localStorage.alldata);
     console.log(objdata);
     pagePrint(objdata);
@@ -49,7 +49,7 @@ function pagePrint(listArray){
             listitems += "<div>"+ listArray[l].collection[i].name +"</div>";
         }
 
-        $(".bokoblinbox").append("<div><span>" + listArray[l].name + "</span>"+
+        $(".allMyLists").append("<div><span>" + listArray[l].name + "</span>"+
             "<input onkeyup='addItem(this, this.value, event, "+ l +")' type='text' placeholder='Add Item...' class='iteminput'>"+
             "<div class='itembox'>"+ listitems +"</div> "+
             "</div>");

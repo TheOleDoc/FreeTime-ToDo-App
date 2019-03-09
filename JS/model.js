@@ -3,21 +3,21 @@ let mylists = new ListCollection();
 
 function ListCollection(){
     this.collection = [];
-    this.add = function(bname){
-        this.collection.push(new Bokoblin(bname));
+    this.add = function(lname){
+        this.collection.push(new theNewLists(lname));
     };
 }
 
-function Bokoblin(name){ //this would be our list
+function theNewLists(name){ //this would be our list
     this.name = name;
     this.collection = [];
 
-    this.add = function(itemname, damageflag){
-        this.collection.push(new Item(itemname, damageflag));
+    this.add = function(itemname, pendingflag){
+        this.collection.push(new Item(itemname, pendingflag));
     }
 }
 
-function Item(name, damage){ //this could be a list item
+function Item(name, pending){ //this could be a list item
     this.name = name;
-    this.damage = damage;
+    this.damage = pending;
 }
