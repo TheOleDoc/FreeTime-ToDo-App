@@ -52,7 +52,7 @@ function pagePrint(listArray){
 
         $(".allMyLists").append("<div class='container newListContain'><i onclick='deleteItem(this)' class='icon fas fa-trash listTitleIcon'></i><span class='rowSpan' contenteditable='true'>" + listArray[l].name + "</span>"+
 
-            "<input contenteditable='true' onkeyup='addItem(this, this.value, event, "+ l +")' type='text' placeholder='Add Item...' class='iteminput'>" +
+            "<span><input contenteditable='true' onkeyup='addItem(this, this.value, event, "+ l +")' type='text' placeholder='Add Item...' class='iteminput'></span>" +
 
             "<div contenteditable='true' class='itembox'>"+ listitems +"</div>"+
             // "<i onclick='deleteItem(this)' class='icon fas fa-trash'></i>" +
