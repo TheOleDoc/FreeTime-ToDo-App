@@ -46,16 +46,16 @@ function pagePrint(listArray){
         let listitems = "";
 
         for(let i = 0; i < listArray[l].collection.length; i++){
-            listitems += "<div contenteditable='true'>"+ listArray[l].collection[i].name +"</div>";
+            listitems += "<div contenteditable='true'><i onclick='deleteItem(this)' class='icon fas fa-trash listItemIcon'></i>"+ listArray[l].collection[i].name +"</div>";
 
         }
 
-        $(".allMyLists").append("<div><span class='row' contenteditable='true'>" + listArray[l].name + "</span>"+
+        $(".allMyLists").append("<div class='container newListContain'><i onclick='deleteItem(this)' class='icon fas fa-trash listTitleIcon'></i><span class='rowSpan' contenteditable='true'>" + listArray[l].name + "</span>"+
 
             "<input contenteditable='true' onkeyup='addItem(this, this.value, event, "+ l +")' type='text' placeholder='Add Item...' class='iteminput'>" +
 
             "<div contenteditable='true' class='itembox'>"+ listitems +"</div>"+
-            "<i onclick='deleteItem(this)' class='icon fas fa-trash'></i>" +
+            // "<i onclick='deleteItem(this)' class='icon fas fa-trash'></i>" +
 
             "</div>");
     }
@@ -64,10 +64,19 @@ function pagePrint(listArray){
 function deleteItem(element) {
     $(element).parent().fadeOut(
         function () {
-            $(element).parent().remove();
+            $(element).remove();
         }
     );
 }
+
+// function deleteItemChildren(element) {
+//     $(element).parent.fadeOut(
+//         function () {
+//             $(element).empty();
+//         }
+//     );
+// }
+
 
 function addItem(elem, incval, event, listnumber){
     switch(event.key){

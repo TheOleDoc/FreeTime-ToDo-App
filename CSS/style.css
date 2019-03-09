@@ -1,9 +1,24 @@
+.listItemIcon {
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.listTitleIcon {
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.newListContain {
+  margin: 2em;
+  padding: 1em;
+  border-style: solid;
+  border-color: grey; }
+
 #allLists {
   margin: 2em;
   padding: 1em;
   border-style: solid;
   border-color: grey;
-  min-height: 800px; }
+  min-height: 800px;
+  display: flex; }
 
 #index-main-myListTitle {
   padding: 1em; }
