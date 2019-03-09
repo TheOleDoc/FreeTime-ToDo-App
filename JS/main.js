@@ -46,7 +46,7 @@ function pagePrint(listArray){
         let listitems = "";
 
         for(let i = 0; i < listArray[l].collection.length; i++){
-            listitems += "<div>"+ listArray[l].collection[i].name +"</div>";
+            listitems += "<div contenteditable='true'>"+ listArray[l].collection[i].name +"</div>";
         }
 
         $(".allMyLists").append("<div><span class='row' contenteditable='true'>" + listArray[l].name + "</span>"+
