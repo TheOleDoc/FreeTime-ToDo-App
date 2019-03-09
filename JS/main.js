@@ -49,9 +49,9 @@ function pagePrint(listArray){
             listitems += "<div>"+ listArray[l].collection[i].name +"</div>";
         }
 
-        $(".allMyLists").append("<div><span>" + listArray[l].name + "</span>"+
-            "<input onkeyup='addItem(this, this.value, event, "+ l +")' type='text' placeholder='Add Item...' class='iteminput'>"+
-            "<div class='itembox'>"+ listitems +"</div> "+
+        $(".allMyLists").append("<div><span contenteditable='true'>" + listArray[l].name + "</span>"+
+            "<input contenteditable='true' onkeyup='addItem(this, this.value, event, "+ l +")' type='text' placeholder='Add Item...' class='iteminput'>"+
+            "<div contenteditable='true' class='itembox'>"+ listitems +"</div> "+
             "</div>");
     }
 }
