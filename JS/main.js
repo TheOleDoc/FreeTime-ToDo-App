@@ -66,3 +66,7 @@ function addItem(elem, incval, event, listnumber){
             break;
     }
 }
+
+function deleteItem(element) {
+    $(element).parent().fadeOut();
+}
