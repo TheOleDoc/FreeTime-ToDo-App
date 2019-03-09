@@ -47,14 +47,26 @@ function pagePrint(listArray){
 
         for(let i = 0; i < listArray[l].collection.length; i++){
             listitems += "<div contenteditable='true'>"+ listArray[l].collection[i].name +"</div>";
+
         }
 
         $(".allMyLists").append("<div><span class='row' contenteditable='true'>" + listArray[l].name + "</span>"+
-            "<i onclick='deleteItem(this)' class='icon fas fa-trash'></i>"+
-            "<input contenteditable='true' onkeyup='addItem(this, this.value, event, "+ l +")' type='text' placeholder='Add Item...' class='iteminput'>"+
-            "<div contenteditable='true' class='itembox'>"+ listitems +"</div> "+
+
+            "<input contenteditable='true' onkeyup='addItem(this, this.value, event, "+ l +")' type='text' placeholder='Add Item...' class='iteminput'>" +
+
+            "<div contenteditable='true' class='itembox'>"+ listitems +"</div>"+
+            "<i onclick='deleteItem(this)' class='icon fas fa-trash'></i>" +
+
             "</div>");
     }
+}
+
+function deleteItem(element) {
+    $(element).sibling().fadeOut(
+        function () {
+            $(element).siblings().remove();
+        }
+    );
 }
 
 function addItem(elem, incval, event, listnumber){
@@ -67,6 +79,3 @@ function addItem(elem, incval, event, listnumber){
     }
 }
 
-function deleteItem(element) {
-    $(element).parent().fadeOut();
-}
