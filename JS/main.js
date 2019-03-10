@@ -57,7 +57,6 @@ function pagePrint(listArray){
             "<span><input contenteditable='true' onkeyup='addItem(this, this.value, event, "+ l +")' type='text' placeholder='Add Item...' class='row iteminput'></span>" +
 
             "<div class='itembox'>"+ listitems + "</div>"+
-            // "<i onclick='deleteItem(this)' class='icon fas fa-trash'></i>" +
 
             "</div>");
             $(".iteminput").focus();
