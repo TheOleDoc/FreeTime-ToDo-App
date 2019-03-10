@@ -74,7 +74,10 @@ function deleteItem(element) {
 
 $(document).on("click", '#clearBtn', function() {
     $(".itemCheckbox:checked").each(function () {
-        $(this).closest("div").remove();
+        $(this).closest("div").fadeOut(
+            function() {
+                $(this).closest("div").remove()
+            });
     });
 });
 
