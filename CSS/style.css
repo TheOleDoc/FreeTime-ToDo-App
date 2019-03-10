@@ -1,3 +1,6 @@
+.itemCheckbox {
+  margin-right: .25em; }
+
 .iteminput {
   margin-left: 1em;
   margin-top: 1em;
@@ -53,3 +56,6 @@ nav {
   width: 100%;
   padding: 0;
   margin: 0; }
+
+.rowSpan {
+  font-weight: 800; }

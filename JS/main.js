@@ -46,7 +46,9 @@ function pagePrint(listArray){
         let listitems = "";
 
         for(let i = 0; i < listArray[l].collection.length; i++){
-            listitems += "<div contenteditable='true'><i onclick='deleteItem(this)' class='icon fas fa-trash listItemIcon'></i>"+ listArray[l].collection[i].name +"</div>";
+            listitems += "<div contenteditable='true'>" +
+                "<i onclick='deleteItem(this)' class='icon fas fa-trash listItemIcon'></i>" +
+                "<input type='checkbox' class='itemCheckbox'>"+ listArray[l].collection[i].name +"</div>";
 
         }
 
@@ -54,10 +56,11 @@ function pagePrint(listArray){
 
             "<span><input contenteditable='true' onkeyup='addItem(this, this.value, event, "+ l +")' type='text' placeholder='Add Item...' class='row iteminput'></span>" +
 
-            "<div contenteditable='true' class='itembox'>"+ listitems +"</div>"+
+            "<div contenteditable='true' class='itembox'>"+ listitems + "</div>"+
             // "<i onclick='deleteItem(this)' class='icon fas fa-trash'></i>" +
 
             "</div>");
+        // $(".row iteminput").focus();
     }
 }
 
@@ -69,13 +72,7 @@ function deleteItem(element) {
     );
 }
 
-// function deleteItemChildren(element) {
-//     $(element).parent.fadeOut(
-//         function () {
-//             $(element).empty();
-//         }
-//     );
-// }
+
 
 
 function addItem(elem, incval, event, listnumber){
