@@ -56,7 +56,7 @@ function pagePrint(listArray){
 
             "<span><input contenteditable='true' onkeyup='addItem(this, this.value, event, "+ l +")' type='text' placeholder='Add Item...' class='row iteminput'></span>" +
 
-            "<div contenteditable='true' class='itembox'>"+ listitems + "</div>"+
+            "<div class='itembox'>"+ listitems + "</div>"+
             // "<i onclick='deleteItem(this)' class='icon fas fa-trash'></i>" +
 
             "</div>");
@@ -72,6 +72,25 @@ function deleteItem(element) {
     );
 }
 
+$(document).on("click", '#clearBtn', function() {
+    $(".itemCheckbox:checked").each(function () {
+        $(this).closest("div").remove();
+    });
+});
+
+
+
+// function clearCompleted(event) {
+//     $('.itemCheckbox').change(function() {
+//         if ($(this).is(':checked')) {
+//             console.log('Checked');
+//             $(element).remove();
+//         } else {
+//             console.log('Unchecked');
+//
+//         }
+//     });
+// }
 
 
 

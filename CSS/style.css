@@ -1,3 +1,9 @@
+.itembox {
+  margin-bottom: .6em; }
+
+.clearCompBtn {
+  margin: 1em 1em 0em 0em; }
+
 .itemCheckbox {
   margin-right: .25em; }
 
@@ -58,4 +64,5 @@ nav {
   margin: 0; }
 
 .rowSpan {
-  font-weight: 800; }
+  font-weight: 800;
+  font-size: large; }
