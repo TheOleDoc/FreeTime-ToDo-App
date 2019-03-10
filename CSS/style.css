@@ -1,5 +1,6 @@
 .itembox {
-  margin-bottom: .6em; }
+  margin-bottom: .6em;
+  width: auto; }
 
 .clearCompBtn {
   margin: 1em 1em 0em 0em; }
@@ -24,7 +25,8 @@
   margin: 2em;
   padding: 1em;
   border-style: solid;
-  border-color: grey; }
+  border-color: grey;
+  width: auto; }
 
 #allLists {
   margin: 2em;
@@ -32,7 +34,11 @@
   border-style: solid;
   border-color: grey;
   min-height: 800px;
+  width: 100%;
   display: flex; }
+
+.allMyLists {
+  width: inherit; }
 
 #index-main-myListTitle {
   padding: 1em; }

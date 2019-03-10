@@ -80,19 +80,6 @@ $(document).on("click", '#clearBtn', function() {
 
 
 
-// function clearCompleted(event) {
-//     $('.itemCheckbox').change(function() {
-//         if ($(this).is(':checked')) {
-//             console.log('Checked');
-//             $(element).remove();
-//         } else {
-//             console.log('Unchecked');
-//
-//         }
-//     });
-// }
-
-
 
 function addItem(elem, incval, event, listnumber){
     switch(event.key){
