@@ -60,7 +60,7 @@ function pagePrint(listArray){
             // "<i onclick='deleteItem(this)' class='icon fas fa-trash'></i>" +
 
             "</div>");
-        // $(".row iteminput").focus();
+            $(".iteminput").focus();
     }
 }
 
