@@ -18,6 +18,7 @@
 
 
 function putNewList(myval, event){
+    console.log(event);
     switch(event.key){
         case "Enter":
             // console.log("enter pushed");
@@ -93,3 +94,16 @@ function addItem(elem, incval, event, listnumber){
     }
 }
 
+
+/////TRENT's Additional Examples
+
+function removeList(listnumber) {
+    mylists.collection.splice(listnumber, 1);
+    savedata();
+}
+
+function removeItem(listnumber, itemnumber) {
+    mylists.collection[listnumber].collection.splice(itemnumber, 1);
+    savadata();
+
+}
